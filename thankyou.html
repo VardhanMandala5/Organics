@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fresh Organics — Thank You</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body id="page-thankyou">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Fresh Organics</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart <span id="cart-count-header" class="cart-count">0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container thankyou">
+    <div class="thank-card">
+      <h1>Thank You!</h1>
+      <p>Your order has been placed successfully. We'll pack it with care and deliver it safely to you.</p>
+      <a href="index.html" class="btn btn-primary">Back to Home</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Fresh Organics</p>
+    </div>
+  </footer>
+
+  <a class="whatsapp-fab" href="https://wa.me/919000000000?text=Hi%20Fresh%20Organics%2C%20I%27d%20like%20to%20place%20an%20order." target="_blank" aria-label="Order via WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+  </a>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
