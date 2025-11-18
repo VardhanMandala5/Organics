@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fresh Organics — Products</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body id="page-products">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Fresh Organics</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart <span id="cart-count-header" class="cart-count">0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="products-top">
+      <div class="search-filter">
+        <input id="search-input" class="search-input" type="search" placeholder="Search products..." />
+        <div class="filters" id="category-filters">
+          <button class="filter-btn active" data-category="All">All</button>
+          <button class="filter-btn" data-category="Milk">Milk</button>
+          <button class="filter-btn" data-category="Vegetables">Vegetables</button>
+          <button class="filter-btn" data-category="Fruits">Fruits</button>
+          <button class="filter-btn" data-category="Home Needs">Home Needs</button>
+        </div>
+      </div>
+      <div class="shop-actions">
+        <a href="cart.html" class="btn btn-outline">View Cart</a>
+      </div>
+    </section>
+
+    <section class="product-list" id="product-list" aria-live="polite">
+      <!-- Products rendered by script.js -->
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Fresh Organics</p>
+    </div>
+  </footer>
+
+  <a class="whatsapp-fab" href="https://wa.me/919000000000?text=Hi%20Fresh%20Organics%2C%20I%27d%20like%20to%20place%20an%20order." target="_blank" aria-label="Order via WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+  </a>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
