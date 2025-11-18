@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fresh Organics — Home</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body id="page-home">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Fresh Organics</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart <span id="cart-count-header" class="cart-count">0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Fresh Organics</h1>
+          <p>Healthy, farm-fresh organic products delivered safely to your doorstep. Natural, chemical-free & sustainably sourced.</p>
+          <div class="hero-cta">
+            <a href="products.html" class="btn btn-primary">Shop Now</a>
+            <a href="products.html#categories" class="btn btn-outline">Browse Categories</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1506806732259-39c2d0268443?auto=format&fit=crop&w=900&q=80" alt="Fresh organic produce">
+        </div>
+      </div>
+    </section>
+
+    <section class="features container">
+      <h2>Why choose Fresh Organics?</h2>
+      <div class="features-grid">
+        <div class="feature">
+          <h3>Pure & Natural</h3>
+          <p>No synthetic pesticides, no harmful additives — just real food.</p>
+        </div>
+        <div class="feature">
+          <h3>Locally Sourced</h3>
+          <p>From trusted farmers to your table — always fresh.</p>
+        </div>
+        <div class="feature">
+          <h3>Safe Delivery</h3>
+          <p>Contactless delivery with careful handling and packaging.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="popular container">
+      <h2>Popular Categories</h2>
+      <div class="category-grid" id="categories">
+        <a class="category-card" href="products.html?category=Milk">Milk</a>
+        <a class="category-card" href="products.html?category=Vegetables">Vegetables</a>
+        <a class="category-card" href="products.html?category=Fruits">Fruits</a>
+        <a class="category-card" href="products.html?category=Home Needs">Home Needs</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Fresh Organics • Healthy food for a healthy life</p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a class="whatsapp-fab" href="https://wa.me/919000000000?text=Hi%20Fresh%20Organics%2C%20I%27d%20like%20to%20place%20an%20order." target="_blank" aria-label="Order via WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+  </a>
+
+  <script src="script.js"></script>
+  <script>
+    // small inline to set year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
